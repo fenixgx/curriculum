@@ -43,11 +43,11 @@ export default function About() {
 
             <p>
               Later I founded Roka Creativa and spent 15 years leading a
-              10-person company that delivered websites, branding, print,
-              signage, and digital projects. It was not only design work; it was
-              sales, delivery, client communication, support, production, and
-              making sure the final result worked for people who had no patience
-              for technical excuses.
+              graphic arts company that delivered print, signage, branding,
+              websites, and digital projects. It was not only design work; it
+              was sales, delivery, client communication, support, production,
+              and making sure the final result worked for people who had no
+              patience for technical excuses.
             </p>
 
             <p>

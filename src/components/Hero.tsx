@@ -37,10 +37,10 @@ export default function Hero() {
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-text-secondary)] md:text-xl">
             I am Rodolfo Giannotti. I started in IT as a network administrator
-            and systems manager, later built and ran a 10-person creative
-            and web production company, and now ship AI-first web applications
-            end to end. I like useful software: clear requirements, solid
-            execution, and products that solve real operational problems.
+            and systems manager, later ran a graphic arts company that also
+            delivered web projects, and now ship AI-first web applications end
+            to end. I like useful software: clear requirements, solid execution,
+            and products that solve real operational problems.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
