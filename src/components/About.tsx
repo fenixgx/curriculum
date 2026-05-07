@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const strengths = [
-  "I can talk to a business owner and translate the messy reality into a product requirement.",
+  "I can turn vague operational problems into product requirements, data models, workflows, and usable interfaces.",
   "I build with AI every day, but I do not treat it as magic. I wrap it in process, logs, specs, validation, and backups.",
-  "I know what it means to be responsible for clients, deadlines, employees, invoices, and production systems.",
+  "I know what it means to own delivery: clients, deadlines, employees, invoices, support, and production systems.",
 ];
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
             Profile
           </p>
           <h2 className="text-3xl font-semibold md:text-4xl">
-            Not a bootcamp story. A business-and-systems story.
+            Not a bootcamp story. A systems, product, and delivery story.
           </h2>
         </motion.div>
 
@@ -36,24 +36,27 @@ export default function About() {
           <div className="space-y-5 text-base leading-relaxed text-[var(--color-text-secondary)] md:text-lg">
             <p>
               I started in technology as a network administrator, then became
-              responsible for systems in a betting company. Later I founded Roka
-              Creativa and spent 15 years building websites, print, branding,
-              signage, and client projects for real businesses.
+              responsible for systems in a betting company where uptime,
+              reliability, and operational discipline mattered. That foundation
+              stayed with me.
             </p>
 
             <p>
-              That experience matters. A restaurant owner does not care about a
-              framework. They care that the menu works, the QR opens, the staff
-              can update it, the translations are right, and customers do not
-              get confused. That is the lens I bring to software.
+              Later I founded Roka Creativa and spent 15 years leading a
+              10-person company that delivered websites, branding, print,
+              signage, and digital projects. It was not only design work; it was
+              sales, delivery, client communication, support, production, and
+              making sure the final result worked for people who had no patience
+              for technical excuses.
             </p>
 
             <p>
               When modern AI tooling became good enough, I returned to software
-              seriously and built products around the same principle: useful
-              systems, not demos. I am now looking for a team where I can bring
-              that product instinct, keep learning from stronger engineers, and
-              contribute fast.
+              seriously and started building full-stack products around the same
+              principle: useful systems, not demos. I am looking for a team
+              where I can bring product instinct, AI development workflow,
+              practical engineering, and the hunger to keep learning from
+              stronger builders.
             </p>
           </div>
 

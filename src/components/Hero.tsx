@@ -9,7 +9,7 @@ const facts = [
   ["Location", "Tenerife / Scotland temporarily"],
   ["English", "B2 - strong written, functional spoken"],
   ["Open to", "Remote full-stack / AI product roles"],
-  ["Background", "23 years in tech, 15 running a business"],
+  ["Background", "Systems, business, and AI product development"],
 ];
 
 export default function Hero() {
@@ -31,15 +31,16 @@ export default function Hero() {
           </div>
 
           <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-[var(--color-text-primary)] md:text-6xl">
-            I build real AI products, and I understand the businesses behind
-            them.
+            I build full-stack AI products with systems thinking and real
+            business experience.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-text-secondary)] md:text-xl">
-            I am Rodolfo Giannotti. Before returning to code, I spent 15 years
-            running a creative agency and working with restaurants, hotels, and
-            local businesses. Now I build full-stack AI products with the same
-            obsession: solve the real problem, not the imaginary one.
+            I am Rodolfo Giannotti. I started in IT as a network administrator
+            and systems manager, later built and ran a 10-person creative
+            and web production company, and now ship AI-first web applications
+            end to end. I like useful software: clear requirements, solid
+            execution, and products that solve real operational problems.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

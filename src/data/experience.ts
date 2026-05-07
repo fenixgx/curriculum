@@ -23,14 +23,14 @@ export const experiences: Experience[] = [
   },
   {
     period: "2005 - 2020",
-    title: "Founder & Creative Director",
+    title: "Founder & Director",
     company: "Roka Creativa",
     description:
-      "Founded and ran a creative agency for 15 years. We delivered web design, print, branding, signage, and client projects for hundreds of businesses, especially restaurants and hospitality companies.",
+      "Founded and ran a 10-person creative and production company for 15 years. We delivered websites, branding, print, signage, and digital projects for hundreds of businesses while managing sales, operations, delivery, and client support.",
     highlights: [
       "Led a team of 10 people",
       "Worked directly with hundreds of real businesses",
-      "Built long-term relationships in hospitality and local commerce",
+      "Built long-term client relationships across service, retail, events, and local commerce",
       "Managed sales, delivery, client communication, operations, and quality",
       "Learned how non-technical businesses actually make decisions",
     ],
