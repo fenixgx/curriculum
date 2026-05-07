@@ -35,6 +35,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# private project context
+.spec/
+AGENTS*.md
+NEXUS_EXPLICACION.md
+session-*.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
