@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, Mail, MapPin } from "lucide-react";
+import { useState } from "react";
+import { ArrowDown, Mail, MapPin, X } from "lucide-react";
 
 const facts = [
   ["Location", "Tenerife / Scotland temporarily"],
@@ -12,6 +13,8 @@ const facts = [
 ];
 
 export default function Hero() {
+  const [isPhotoOpen, setIsPhotoOpen] = useState(false);
+
   return (
     <section className="relative overflow-hidden border-b border-[var(--color-border)] px-6 py-20 md:py-28">
       <div className="absolute inset-0 bg-[linear-gradient(var(--color-border)_1px,transparent_1px),linear-gradient(90deg,var(--color-border)_1px,transparent_1px)] bg-[size:64px_64px] opacity-[0.12]" />
@@ -69,14 +72,21 @@ export default function Hero() {
           className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
         >
           <div className="mb-7 flex items-center gap-5">
-            <Image
-              src="/rodolfo-profile.png"
-              alt="Rodolfo Giannotti"
-              width={112}
-              height={112}
-              priority
-              className="h-28 w-28 shrink-0 rounded-full border border-[var(--color-accent)]/50 object-cover"
-            />
+            <button
+              type="button"
+              aria-label="View larger photo of Rodolfo Giannotti"
+              onClick={() => setIsPhotoOpen(true)}
+              className="group shrink-0 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)]"
+            >
+              <Image
+                src="/rodolfo-profile.png"
+                alt="Rodolfo Giannotti"
+                width={112}
+                height={112}
+                priority
+                className="h-28 w-28 rounded-full border border-[var(--color-accent)]/50 object-cover transition duration-300 group-hover:scale-[1.04] group-hover:border-[var(--color-accent)]"
+              />
+            </button>
             <div>
               <p className="text-xl font-semibold">Rodolfo Giannotti</p>
               <p className="text-sm text-[var(--color-text-muted)]">
@@ -102,6 +112,33 @@ export default function Hero() {
           </dl>
         </motion.aside>
       </div>
+
+      {isPhotoOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Large photo of Rodolfo Giannotti"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-6 py-10 backdrop-blur-sm"
+          onClick={() => setIsPhotoOpen(false)}
+        >
+          <button
+            type="button"
+            aria-label="Close photo"
+            onClick={() => setIsPhotoOpen(false)}
+            className="absolute right-5 top-5 rounded-full border border-white/20 bg-black/40 p-3 text-white transition hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+          >
+            <X className="h-5 w-5" />
+          </button>
+          <Image
+            src="/rodolfo-profile.png"
+            alt="Rodolfo Giannotti"
+            width={720}
+            height={720}
+            className="max-h-[82vh] w-auto max-w-full rounded-full border border-[var(--color-accent)]/70 object-cover shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }
