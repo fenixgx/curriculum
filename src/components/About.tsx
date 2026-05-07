@@ -1,0 +1,74 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const strengths = [
+  "I can talk to a business owner and translate the messy reality into a product requirement.",
+  "I build with AI every day, but I do not treat it as magic. I wrap it in process, logs, specs, validation, and backups.",
+  "I know what it means to be responsible for clients, deadlines, employees, invoices, and production systems.",
+];
+
+export default function About() {
+  return (
+    <section id="about" className="border-b border-[var(--color-border)] px-6 py-20">
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[320px_1fr]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <p className="mb-3 font-mono text-sm uppercase text-[var(--color-accent)]">
+            Profile
+          </p>
+          <h2 className="text-3xl font-semibold md:text-4xl">
+            Not a bootcamp story. A business-and-systems story.
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <div className="space-y-5 text-base leading-relaxed text-[var(--color-text-secondary)] md:text-lg">
+            <p>
+              I started in technology as a network administrator, then became
+              responsible for systems in a betting company. Later I founded Roka
+              Creativa and spent 15 years building websites, print, branding,
+              signage, and client projects for real businesses.
+            </p>
+
+            <p>
+              That experience matters. A restaurant owner does not care about a
+              framework. They care that the menu works, the QR opens, the staff
+              can update it, the translations are right, and customers do not
+              get confused. That is the lens I bring to software.
+            </p>
+
+            <p>
+              When modern AI tooling became good enough, I returned to software
+              seriously and built products around the same principle: useful
+              systems, not demos. I am now looking for a team where I can bring
+              that product instinct, keep learning from stronger engineers, and
+              contribute fast.
+            </p>
+          </div>
+
+          <div className="grid gap-3 md:grid-cols-3">
+            {strengths.map((item) => (
+              <div
+                key={item}
+                className="border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-sm leading-relaxed text-[var(--color-text-secondary)]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
