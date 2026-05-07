@@ -49,14 +49,25 @@ export const techStack: StackCategory[] = [
     ],
   },
   {
-    category: "Payments & Services",
+    category: "Automation & Services",
     items: [
-      "Stripe 20",
-      "Telegram Bot API",
-      "Google Calendar API",
       "n8n Automation",
       "Resend (Email)",
+      "Telegram Bot API",
+      "Google Maps scraping",
+      "Webhooks",
+      "Workflow monitoring",
+    ],
+  },
+  {
+    category: "Payments & Integrations",
+    items: [
+      "Stripe 20",
+      "Google Calendar API",
       "Sentry",
+      "API integrations",
+      "Email tracking",
+      "Production alerts",
     ],
   },
   {

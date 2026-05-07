@@ -41,8 +41,17 @@ export const projects: Project[] = [
       "DALL-E / GPT Image generation",
       "Conversational assistant with 79 functions",
       "Stripe billing + multi-tenant architecture",
+      "n8n growth workflows for leads, email, replies, churn, and Telegram reports",
     ],
-    stack: ["Next.js 16", "TypeScript", "Prisma 7", "Supabase", "OpenAI", "Stripe"],
+    stack: [
+      "Next.js 16",
+      "TypeScript",
+      "Prisma 7",
+      "Supabase",
+      "OpenAI",
+      "Stripe",
+      "n8n",
+    ],
     url: "https://iamenu.ai",
     visuals: [
       {
