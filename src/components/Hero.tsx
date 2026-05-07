@@ -68,14 +68,14 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
           className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
         >
-          <div className="mb-6 flex items-center gap-4">
+          <div className="mb-7 flex items-center gap-5">
             <Image
               src="/rodolfo-profile.png"
               alt="Rodolfo Giannotti"
-              width={80}
-              height={80}
+              width={112}
+              height={112}
               priority
-              className="h-20 w-20 shrink-0 rounded-full border border-[var(--color-accent)]/50 object-cover"
+              className="h-28 w-28 shrink-0 rounded-full border border-[var(--color-accent)]/50 object-cover"
             />
             <div>
               <p className="text-xl font-semibold">Rodolfo Giannotti</p>

@@ -2,7 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandWhatsapp,
+} from "@tabler/icons-react";
 
 export default function Contact() {
   return (
@@ -25,26 +29,35 @@ export default function Contact() {
             AI product work, and contract projects where shipping matters.
           </p>
 
-          <div className="mb-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mb-10 grid gap-4 sm:grid-cols-2">
             <a
               href="mailto:r.giannotti@gmail.com"
-              className="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[var(--color-accent-hover)]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[var(--color-accent-hover)]"
             >
               <Mail className="h-4 w-4" />
               r.giannotti@gmail.com
             </a>
             <a
+              href="https://wa.me/34605377796?text=Hi%20Rodolfo%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+            >
+              <IconBrandWhatsapp className="h-4 w-4" />
+              WhatsApp
+            </a>
+            <a
               href="https://github.com/fenixgx/curriculum"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
             >
               <IconBrandGithub className="h-4 w-4" />
               GitHub
             </a>
             <a
               href="mailto:r.giannotti@gmail.com?subject=LinkedIn%20profile"
-              className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
             >
               <IconBrandLinkedin className="h-4 w-4" />
               LinkedIn soon
