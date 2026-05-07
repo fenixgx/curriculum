@@ -12,7 +12,7 @@ export const honestAnswers: HonestAnswer[] = [
   {
     question: "Did you build all of this alone?",
     answer:
-      "The recent products, yes. But I also ran Roka Creativa for 15 years with a team of 10. I know deadlines, clients, feedback, responsibility, and working with people. I am not attached to being the solo guy.",
+      "The recent products, yes. But I also ran Roka Creativa for 15 years with a small production team. I know deadlines, clients, feedback, responsibility, and working with people. I am not attached to being the solo guy.",
   },
   {
     question: "Are these production products or experiments?",
@@ -32,6 +32,6 @@ export const honestAnswers: HonestAnswer[] = [
   {
     question: "What is your English level?",
     answer:
-      "B2. I understand technical meetings well and write technical documentation comfortably. Speaking is clear, with an accent. I am improving it every day.",
+      "My reading and writing are strong, especially for technical work. Spoken English is functional for technical conversations, but not polished yet. I am honest about that and improving it every day.",
   },
 ];

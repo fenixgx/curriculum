@@ -7,7 +7,7 @@ import { ArrowDown, Mail, MapPin, X } from "lucide-react";
 
 const facts = [
   ["Location", "Tenerife / Scotland temporarily"],
-  ["English", "B2 - strong written, functional spoken"],
+  ["English", "Strong reading/writing, functional spoken"],
   ["Open to", "Remote full-stack / AI product roles"],
   ["Background", "Systems, business, and AI product development"],
 ];
