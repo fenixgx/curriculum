@@ -5,29 +5,44 @@ export interface HonestAnswer {
 
 export const honestAnswers: HonestAnswer[] = [
   {
-    question: "Why look for a team if you already build your own products?",
+    question: "How many real users does IAMenu have?",
     answer:
-      "Because building alone teaches independence, but it also limits your speed. I want to contribute what I know about AI product development, learn from stronger engineers, and build inside a team that moves with discipline.",
+      "IAMenu is new. It launched recently and has 40+ trial users from more than 10 countries. I am not claiming paid traction yet; the first users are still in trial. The useful signal is that SEO is already bringing real people to the product.",
   },
   {
-    question: "Did you build all of this alone?",
+    question: "If you build your own products, why look for a job?",
     answer:
-      "The recent products, yes. But I also ran Roka Creativa for 15 years with a small production team. I know deadlines, clients, feedback, responsibility, and working with people. I am not attached to being the solo guy.",
+      "Because I want to work with a team, contribute what I have learned, and keep improving. AI development is moving fast, and I do not want to grow only inside my own bubble. Long term I want my products to stand on their own, but right now I want to build with stronger people around me.",
   },
   {
-    question: "Are these production products or experiments?",
+    question: "Did you build all these products alone?",
     answer:
-      "IAMenu is live with real users. MYAIBS has had real clients but is paused. Taski is in active development. Nexus is internal infrastructure. I am careful about wording because I would rather be precise than inflate the story.",
+      "The recent AI products, yes. That means I had to handle product decisions, frontend, backend, database, AI flows, deployment, and support. But I am not a person who needs to work alone: before this I ran Roka Creativa with a small production team and worked in teams earlier in my IT career.",
   },
   {
-    question: "What happens when AI-generated code gets complex?",
+    question: "Are these products really live, or are they experiments?",
     answer:
-      "I treat it like any complex code: read it, test it, document the why, and change it surgically. Nexus and the SPEC system exist because I do not trust memory alone, human or AI.",
+      "IAMenu is live and has real users. MYAIBS had real clients but is paused because the target is more specific and I chose to focus on IAMenu. Taski is in active development. Nexus is internal infrastructure for my own workflow, not a public product.",
+  },
+  {
+    question: "What is Nexus, and does anyone else use it?",
+    answer:
+      "Nexus is my personal MCP server for persistent AI development context. It stores memories, code intelligence, SPECs, logs, and project knowledge so AI sessions do not start from zero every time. Nobody else uses it and I am not selling it; I built it because I needed that workflow myself.",
   },
   {
     question: "Can you work with legacy code?",
     answer:
-      "Yes. If it works in production, I do not touch it for ego. I make the smallest useful change, preserve behavior, and only refactor when the business or the team actually benefits.",
+      "Yes. If something works in production, I do not touch it for ego. I follow the team lead, make the smallest useful change, preserve behavior, and only refactor when there is a real reason. Production code should be changed surgically.",
+  },
+  {
+    question: "What happens when AI cannot solve something cleanly?",
+    answer:
+      "Then I slow down. I read the code, test smaller pieces, ask better questions, and avoid risky changes until I understand the system. I use AI heavily, but I do not pretend it is magic. My strength is building with AI in a structured way: SPECs, context, logs, verification, and backups.",
+  },
+  {
+    question: "Have you contributed to open source?",
+    answer:
+      "Not meaningfully yet. Most of my work has been private products and client/business work. I do understand the basic GitHub workflow: branches, pull requests, reviews, and merges. I expect to improve that muscle more inside a professional team.",
   },
   {
     question: "What is your English level?",
