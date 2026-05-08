@@ -26,7 +26,8 @@ export default function HonestAnswers() {
           </h2>
           <p className="mx-auto max-w-xl text-[var(--color-text-secondary)]">
             I prefer a precise story over a polished fantasy. These are the
-            parts I would rather clarify before an interview gets vague.
+            questions I would rather answer clearly before an interview gets
+            vague.
           </p>
         </motion.div>
 
