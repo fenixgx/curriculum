@@ -38,10 +38,11 @@ export const experiences: Experience[] = [
   {
     period: "2000 - 2005",
     title: "Network Administrator -> Systems Manager",
-    company: "Betting / Gaming Operations",
+    company: "Embassy & Betting / Gaming Operations",
     description:
-      "Worked in IT systems and network administration for betting/gaming operations, from local-office infrastructure to internal systems, servers, user accounts, connectivity, backups, and day-to-day technical support.",
+      "Built my early IT foundation in stable, trust-based environments, including embassy/government-office support and betting/gaming operations. The work covered local-office infrastructure, internal systems, servers, user accounts, connectivity, backups, and day-to-day technical support.",
     highlights: [
+      "Worked in environments where reliability, discretion, and practical support mattered",
       "Managed local office IT infrastructure, internal networks, workstations, shared resources, and technical support",
       "Helped maintain locally hosted software systems and internal web services before cloud hosting became the default approach",
       "Supported on-premise servers, local applications, connectivity, user access, and operational reliability",
