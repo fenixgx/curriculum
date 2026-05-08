@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { ArrowDown, Mail, MapPin, X } from "lucide-react";
+import { ArrowDown, Check, Copy, Mail, MapPin, X } from "lucide-react";
 
 const facts = [
   ["Location", "Tenerife / Scotland temporarily"],
@@ -14,6 +14,17 @@ const facts = [
 
 export default function Hero() {
   const [isPhotoOpen, setIsPhotoOpen] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("r.giannotti@gmail.com");
+      setEmailCopied(true);
+      window.setTimeout(() => setEmailCopied(false), 1800);
+    } catch {
+      window.location.href = "mailto:r.giannotti@gmail.com";
+    }
+  };
 
   return (
     <section className="relative overflow-hidden border-b border-[var(--color-border)] px-6 py-20 md:py-28">
@@ -51,13 +62,24 @@ export default function Hero() {
               See Selected Work
               <ArrowDown className="h-4 w-4" />
             </a>
-            <a
-              href="mailto:r.giannotti@gmail.com"
+            <button
+              type="button"
+              onClick={copyEmail}
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-6 py-3 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
             >
-              <Mail className="h-4 w-4" />
-              r.giannotti@gmail.com
-            </a>
+              {emailCopied ? (
+                <>
+                  <Check className="h-4 w-4" />
+                  Email copied
+                </>
+              ) : (
+                <>
+                  <Mail className="h-4 w-4" />
+                  <span>r.giannotti@gmail.com</span>
+                  <Copy className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
+                </>
+              )}
+            </button>
           </div>
 
           <p className="mt-6 inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
