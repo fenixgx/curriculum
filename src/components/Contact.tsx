@@ -47,7 +47,7 @@ export default function Contact() {
               WhatsApp
             </a>
             <a
-              href="https://github.com/fenixgx/curriculum"
+              href="https://github.com/fenixgx"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
