@@ -8,6 +8,7 @@ import TechStack from "@/components/TechStack";
 import HonestAnswers from "@/components/HonestAnswers";
 import TryBeforeYouHire from "@/components/TryBeforeYouHire";
 import Contact from "@/components/Contact";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <HonestAnswers />
       <TryBeforeYouHire />
       <Contact />
+      <FloatingWhatsApp />
     </main>
   );
 }

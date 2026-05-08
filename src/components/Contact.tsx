@@ -56,11 +56,13 @@ export default function Contact() {
               GitHub
             </a>
             <a
-              href="mailto:r.giannotti@gmail.com?subject=LinkedIn%20profile"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              href="https://www.linkedin.com/in/rodolfo-giannotti-946261409"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3.5 text-sm font-semibold transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
             >
               <IconBrandLinkedin className="h-4 w-4" />
-              LinkedIn soon
+              LinkedIn
             </a>
           </div>
 
