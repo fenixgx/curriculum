@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Personal Hero And First Contact
+ * 📍 LOCATION: src/components/Hero.tsx
+ *
+ * 🎯 WHY IT EXISTS: Makes the first viewport communicate Rodolfo's identity, role, credibility, and contact path.
+ * 🎯 USE CASES:
+ *   - Recruiter lands on the site and understands the positioning in seconds.
+ *   - Visitor clicks the profile photo for a larger view or copies the email without needing a mail client.
+ *
+ * 🔄 FLOW: profile facts + local UI state -> Hero section -> CTA, email copy, photo lightbox
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: next/image, framer-motion, lucide-react, public/rodolfo-profile.png
+ *
+ * 🚨 CAREFUL: Hero copy is the strongest positioning surface; do not add inflated claims or vague AI hype.
+ * 📊 PERFORMANCE: Uses priority image for the profile photo; keep asset size reasonable.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: Clipboard fallback opens mailto when browser copy is blocked.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";

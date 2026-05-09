@@ -1,3 +1,23 @@
+/**
+ * 🧭 BREADCRUMB: Selected Work Data
+ * 📍 LOCATION: src/data/projects.ts
+ *
+ * 🎯 WHY IT EXISTS: Centralizes the public case-study content for Rodolfo's main products and internal infrastructure.
+ * 🎯 USE CASES:
+ *   - Projects section renders consistent product cards from one source of truth.
+ *   - Recruiter-facing claims can be reviewed without digging through JSX.
+ *
+ * 🔄 FLOW: project facts + image paths -> Projects.tsx -> selected work case studies
+ * 🔗 USED BY: src/components/Projects.tsx
+ * ⚠️ DEPENDS ON: public/iamenu, public/myaibs, public/taski, public/nexus image assets
+ *
+ * 🚨 CAREFUL: Keep status/traction wording precise; IAMenu is live/early-stage, Nexus is internal.
+ * 📊 PERFORMANCE: Static data; image performance depends on referenced assets.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 export interface Project {
   name: string;
   slug: string;

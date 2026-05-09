@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Technical Stack Grid
+ * 📍 LOCATION: src/components/TechStack.tsx
+ *
+ * 🎯 WHY IT EXISTS: Shows the tools Rodolfo actually uses across frontend, backend, AI, automation, and deployment.
+ * 🎯 USE CASES:
+ *   - Lets recruiters scan technologies quickly.
+ *   - Supports the broader claim of end-to-end product execution.
+ *
+ * 🔄 FLOW: techStack data -> category cards -> stack overview
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: src/data/stack.ts, framer-motion
+ *
+ * 🚨 CAREFUL: Keep stack items tied to real usage; do not add buzzwords just for keyword stuffing.
+ * 📊 PERFORMANCE: Static badge grid; no dynamic cost.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import { techStack } from "@/data/stack";
 

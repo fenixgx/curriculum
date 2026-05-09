@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Strategic Straight Answers
+ * 📍 LOCATION: src/components/HonestAnswers.tsx
+ *
+ * 🎯 WHY IT EXISTS: Answers obvious recruiter objections with clarity before interviews become vague.
+ * 🎯 USE CASES:
+ *   - Explains product reality, solo building, job motivation, Nexus, legacy code, and AI responsibility.
+ *   - Keeps honesty strategic instead of defensive.
+ *
+ * 🔄 FLOW: honestAnswers data -> accordion state -> expanded answer
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: src/data/answers.ts, framer-motion, lucide-react
+ *
+ * 🚨 CAREFUL: Do not re-add weak early filters like English level or open source unless the strategy changes.
+ * 📊 PERFORMANCE: Small client state for accordion; data is static.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";

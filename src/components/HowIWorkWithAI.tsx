@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: AI Development Workflow
+ * 📍 LOCATION: src/components/HowIWorkWithAI.tsx
+ *
+ * 🎯 WHY IT EXISTS: Shows that Rodolfo uses AI with context, SPECs, verification, and infrastructure instead of treating AI as magic.
+ * 🎯 USE CASES:
+ *   - Explains Nexus to technical reviewers.
+ *   - Connects AI tools with disciplined engineering workflow.
+ *
+ * 🔄 FLOW: workflow concepts -> Nexus card + process cards -> methodology proof
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: framer-motion, lucide-react
+ *
+ * 🚨 CAREFUL: Nexus is internal infrastructure, not a public SaaS product; keep wording clear.
+ * 📊 PERFORMANCE: Static text/cards with lightweight icons and animations.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import { Brain, FileText, Search, ShieldCheck } from "lucide-react";
 

@@ -1,3 +1,23 @@
+/**
+ * 🧭 BREADCRUMB: Technical Stack Data
+ * 📍 LOCATION: src/data/stack.ts
+ *
+ * 🎯 WHY IT EXISTS: Defines the public stack categories shown in the portfolio.
+ * 🎯 USE CASES:
+ *   - TechStack.tsx renders a scannable skill grid.
+ *   - Stack claims stay tied to real product/project usage.
+ *
+ * 🔄 FLOW: stack categories -> TechStack.tsx -> visual badges
+ * 🔗 USED BY: src/components/TechStack.tsx
+ * ⚠️ DEPENDS ON: Rodolfo's current tools and project experience
+ *
+ * 🚨 CAREFUL: Avoid keyword stuffing; every item should be defensible in an interview.
+ * 📊 PERFORMANCE: Static data only.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 export interface StackCategory {
   category: string;
   items: string[];

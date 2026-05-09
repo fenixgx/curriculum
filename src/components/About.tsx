@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Human Profile Narrative
+ * 📍 LOCATION: src/components/About.tsx
+ *
+ * 🎯 WHY IT EXISTS: Explains Rodolfo's non-linear path as a strength: IT foundation, business ownership, and AI product building.
+ * 🎯 USE CASES:
+ *   - Shows he is not a junior who appeared with AI tools.
+ *   - Connects business delivery experience with current software/product work.
+ *
+ * 🔄 FLOW: curated profile copy -> About section -> professional context before projects
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: framer-motion
+ *
+ * 🚨 CAREFUL: Do not over-index on restaurants/hospitality; Roka is background, not the whole identity.
+ * 📊 PERFORMANCE: Static text with small viewport animation.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 
 const strengths = [

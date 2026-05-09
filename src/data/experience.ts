@@ -1,3 +1,23 @@
+/**
+ * 🧭 BREADCRUMB: Experience Timeline Data
+ * 📍 LOCATION: src/data/experience.ts
+ *
+ * 🎯 WHY IT EXISTS: Keeps career history factual, concise, and aligned with LinkedIn without overcrowding the landing page.
+ * 🎯 USE CASES:
+ *   - Experience.tsx renders the non-linear career story.
+ *   - Copy can be audited for truthfulness before public changes.
+ *
+ * 🔄 FLOW: career entries -> Experience.tsx -> visual timeline
+ * 🔗 USED BY: src/components/Experience.tsx
+ * ⚠️ DEPENDS ON: Rodolfo's verified career history and LinkedIn positioning
+ *
+ * 🚨 CAREFUL: Do not split into too many roles on the website; LinkedIn carries granular job history.
+ * 📊 PERFORMANCE: Static data only.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 export interface Experience {
   period: string;
   title: string;

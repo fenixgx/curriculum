@@ -1,5 +1,26 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Experience Timeline
+ * 📍 LOCATION: src/components/Experience.tsx
+ *
+ * 🎯 WHY IT EXISTS: Presents Rodolfo's career as three coherent stages instead of a confusing non-linear CV.
+ * 🎯 USE CASES:
+ *   - Shows current AI/full-stack work.
+ *   - Shows Roka Creativa as long-term business ownership.
+ *   - Shows early IT/embassy/gaming operations background as real technical foundation.
+ *
+ * 🔄 FLOW: experience data -> alternating timeline -> career narrative
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: src/data/experience.ts, framer-motion
+ *
+ * 🚨 CAREFUL: Website timeline is intentionally condensed; LinkedIn can carry more granular job history.
+ * 📊 PERFORMANCE: Static data render with viewport animations.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import { experiences } from "@/data/experience";
 

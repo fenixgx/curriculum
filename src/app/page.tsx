@@ -10,6 +10,26 @@ import TryBeforeYouHire from "@/components/TryBeforeYouHire";
 import Contact from "@/components/Contact";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
+/**
+ * 🧭 BREADCRUMB: Portfolio Page Composition
+ * 📍 LOCATION: src/app/page.tsx
+ *
+ * 🎯 WHY IT EXISTS: Composes the public CV/portfolio narrative in the exact reading order recruiters should see.
+ * 🎯 USE CASES:
+ *   - Presents Rodolfo first as a person and builder.
+ *   - Moves from proof of work to methodology, experience, stack, answers, and contact.
+ *
+ * 🔄 FLOW: Route "/" -> ordered section components -> complete landing page
+ * 🔗 USED BY: Next.js root route, Vercel static export
+ * ⚠️ DEPENDS ON: All components in src/components
+ *
+ * 🚨 CAREFUL: Reordering sections changes the hiring narrative, not just layout.
+ * 📊 PERFORMANCE: Static composition; animation lives inside client components.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 export default function Home() {
   return (
     <main>

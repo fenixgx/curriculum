@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+/**
+ * 🧭 BREADCRUMB: Global Portfolio Theme
+ * 📍 LOCATION: src/app/globals.css
+ *
+ * 🎯 WHY IT EXISTS: Centralizes the dark technical visual language and amber accent used across the portfolio.
+ * 🎯 USE CASES:
+ *   - Keeps all sections visually consistent.
+ *   - Makes future color changes safe and predictable through CSS variables.
+ *
+ * 🔄 FLOW: Tailwind import -> theme tokens -> global browser/body styling
+ * 🔗 USED BY: Every component through var(--color-*) tokens
+ * ⚠️ DEPENDS ON: Tailwind CSS 4 @theme support
+ *
+ * 🚨 CAREFUL: Changing color tokens changes the whole brand signal; avoid one-note palettes or WhatsApp green.
+ * 📊 PERFORMANCE: CSS-only theme; no JavaScript cost.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 @theme {
   --color-bg: #0a0a0a;
   --color-surface: #141414;

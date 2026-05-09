@@ -1,3 +1,23 @@
+/**
+ * 🧭 BREADCRUMB: Straight Answers Data
+ * 📍 LOCATION: src/data/answers.ts
+ *
+ * 🎯 WHY IT EXISTS: Stores the strategic FAQ that explains unusual profile points without sounding defensive.
+ * 🎯 USE CASES:
+ *   - HonestAnswers.tsx renders recruiter objections as clear answers.
+ *   - Copy can be refined independently from accordion UI.
+ *
+ * 🔄 FLOW: curated Q&A -> HonestAnswers.tsx -> interactive accordion
+ * 🔗 USED BY: src/components/HonestAnswers.tsx
+ * ⚠️ DEPENDS ON: Current portfolio positioning and verified claims
+ *
+ * 🚨 CAREFUL: Do not add questions that create unnecessary early filters unless strategy changes.
+ * 📊 PERFORMANCE: Static data only.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 export interface HonestAnswer {
   question: string;
   answer: string;

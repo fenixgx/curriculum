@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Technical Conversation CTA
+ * 📍 LOCATION: src/components/TryBeforeYouHire.tsx
+ *
+ * 🎯 WHY IT EXISTS: Offers a practical way for companies to evaluate Rodolfo's thinking without a generic CV-only process.
+ * 🎯 USE CASES:
+ *   - Invites a small requirement, code review exercise, or technical conversation.
+ *   - Shows confidence without promising free full-day delivery.
+ *
+ * 🔄 FLOW: CTA copy -> mailto link -> recruiter conversation
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: framer-motion, lucide-react
+ *
+ * 🚨 CAREFUL: Keep this professional; avoid sounding desperate or devaluing paid work.
+ * 📊 PERFORMANCE: Static section with one link.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: Relies on user's configured mail client.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import { MessageSquareCode } from "lucide-react";
 

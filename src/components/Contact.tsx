@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Contact Channels
+ * 📍 LOCATION: src/components/Contact.tsx
+ *
+ * 🎯 WHY IT EXISTS: Provides the formal contact block for email, WhatsApp, GitHub, and LinkedIn.
+ * 🎯 USE CASES:
+ *   - Recruiters can choose their preferred channel.
+ *   - Public profile links support verification of the portfolio story.
+ *
+ * 🔄 FLOW: static contact links -> buttons -> external communication channels
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: framer-motion, lucide-react, @tabler/icons-react
+ *
+ * 🚨 CAREFUL: Keep links current; GitHub should point to the profile, not only this repo.
+ * 📊 PERFORMANCE: Static links only.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: mailto depends on local mail client configuration.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import {

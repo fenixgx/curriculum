@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Selected Work Case Studies
+ * 📍 LOCATION: src/components/Projects.tsx
+ *
+ * 🎯 WHY IT EXISTS: Turns private/public products into recruiter-readable proof of end-to-end execution.
+ * 🎯 USE CASES:
+ *   - Shows IAMenu, MYAIBS, Taski, and Nexus as case studies.
+ *   - Uses screenshots to prove real interfaces without exposing private code.
+ *
+ * 🔄 FLOW: projects data -> ProjectCase cards -> selected work section
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: src/data/projects.ts, next/image, framer-motion, lucide-react, public project images
+ *
+ * 🚨 CAREFUL: Project status and metrics must stay precise; do not imply mature revenue or public Nexus users.
+ * 📊 PERFORMANCE: Multiple screenshots render through unoptimized static export images; optimize assets if page weight grows.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ExternalLink, Lock } from "lucide-react";

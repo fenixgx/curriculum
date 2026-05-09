@@ -1,5 +1,25 @@
 "use client";
 
+/**
+ * 🧭 BREADCRUMB: Automation And Growth Systems
+ * 📍 LOCATION: src/components/AutomationSystems.tsx
+ *
+ * 🎯 WHY IT EXISTS: Makes n8n automation experience visible as product operations skill, not just a stack badge.
+ * 🎯 USE CASES:
+ *   - Shows lead sourcing, email operations, GPT classification, churn alerts, and Telegram reporting.
+ *   - Demonstrates ability to connect external workflows to real product APIs.
+ *
+ * 🔄 FLOW: workflow/pipeline data -> automation cards -> growth systems section
+ * 🔗 USED BY: src/app/page.tsx
+ * ⚠️ DEPENDS ON: framer-motion, lucide-react
+ *
+ * 🚨 CAREFUL: Say "designed and tested" unless production traction is proven; do not inflate campaign results.
+ * 📊 PERFORMANCE: Static data render; no runtime API calls.
+ *
+ * 💾 MEMORIES: Public-safe SPEC context only; no private memory IDs.
+ * 🐛 KNOWN BUGS: None known.
+ * 📋 SPEC: SPEC-001-curriculum-portfolio-landing
+ */
 import { motion } from "framer-motion";
 import {
   Bell,

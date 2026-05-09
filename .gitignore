@@ -40,6 +40,13 @@ yarn-error.log*
 AGENTS*.md
 NEXUS_EXPLICACION.md
 session-*.md
+*_interview_guide*.md
+Rodolfo_Giannotti_Interview_Guide*.pdf
+estrategia_trabajo_remoto_rodolfo.docx
+codex_portfolio_straight_answers_update.md
+chrome_*.png
+FenixGx*.png
+public/ChatGPT Image*.png
 
 # typescript
 *.tsbuildinfo
