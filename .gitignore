@@ -35,8 +35,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# project workflow docs
+.spec/*
+!.spec/SPEC-001-curriculum-portfolio-landing-07-05-2026/
+!.spec/SPEC-001-curriculum-portfolio-landing-07-05-2026/**
+.spec/*-spanish/
+
 # private project context
-.spec/
 AGENTS*.md
 NEXUS_EXPLICACION.md
 session-*.md
